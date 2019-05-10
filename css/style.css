@@ -1,0 +1,77 @@
+@font-face{ 
+	font-family: 'SqueakyChalkSound';
+	src: url('fonts/SqueakyChalkSound.eot');
+	src: url('fonts/SqueakyChalkSound.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/SqueakyChalkSound.woff') format('woff'),
+	     url('fonts/SqueakyChalkSound.ttf') format('truetype'),
+	     url('fonts/SqueakyChalkSound.svg#webfont') format('svg');
+}
+
+body {
+    font-family: SqueakyChalkSound, Helvetica, sans-serif;
+    background-image: url("images/chalkboard texture 3.jpg");
+  }
+  
+  .header {
+    grid-area: header;
+    color:white; 
+      padding:20px;
+      text-align:center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      font-size: 35px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-areas: 
+      'header header header header header header' 
+      'left middle middle middle middle right' 
+      'footer footer footer footer footer footer';
+    grid-column-gap: 10px; 
+  } 
+  
+  .left,
+  .middle,
+  .right {
+    padding: 10px;
+    height: 600px; 
+  }
+  
+  .left {
+    grid-area: left;
+  }
+  
+  .middle {
+    grid-area: middle;
+    background-image: url("images/Papper.jpg")
+  }
+  
+  .right {
+    grid-area: right;
+  }
+  
+  .footer {
+    grid-area: footer;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    height: 150px;
+    font-size: 25px;
+  }
+
+  #breadtext {
+      text-align: center;
+      font-size: 22px;
+  }
+  
+  @media (max-width: 600px) {
+    .grid-container  {
+      grid-template-areas: 
+        'header header header header header header' 
+        'left left left left left left' 
+        'middle middle middle middle middle middle' 
+        'right right right right right right' 
+        'footer footer footer footer footer footer';
+    }
+}
