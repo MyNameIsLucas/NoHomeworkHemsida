@@ -2,7 +2,6 @@
 	font-family: 'SqueakyChalkSound';
 	src: url('../fonts/SqueakyChalkSound.eot');
 	src: url('../fonts/SqueakyChalkSound.eot?#iefix') format('embedded-opentype'),
-	     url('../fonts/SqueakyChalkSound.woff') format('woff'),
 	     url('../fonts/SqueakyChalkSound.ttf') format('truetype'),
 	     url('../fonts/SqueakyChalkSound.svg#webfont') format('svg');
 }
@@ -10,49 +9,112 @@
 body {
   font-family: SqueakyChalkSound, Helvetica, sans-serif;
   background-image: url("../images/chalkboard texture 3.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  
 }
   
-.header {
-  grid-area: header;
+#ul-nav {
+  list-style-type: none;
+  display: block;
+  margin: auto 0;
+  padding-left: 0;
+}
+
+#ul-nav li {
+  display: list-item;
+  box-sizing: border-box;
+  color: white;
+}
+
+#ul-nav a:hover,#ul-nav a:focus,#ul-nav a:active {
+color: rgb(173, 216, 230);
+}
+
+#ul-nav a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+#main-nav {
+  position: fixed;
   color:white; 
-    padding:20px;
-    text-align:center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    font-size: 35px;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-image: url("../images/Papper.jpg");
+  background-size: cover;
+  width: 14%;
+  height: 100%;
+}
+
+#brand {
+  text-align: center;
+  padding-top: 100px;
+  font-size: 120% !important;
+}
+
+.nav-item {
+  text-align: center !important;
+  font-size: 150%;
 }
 
 .grid-container {
   display: grid;
+  grid-template-columns: 1.5fr 5fr 1fr;
+  grid-template-rows: 2fr 5fr 5fr 2fr;
   grid-template-areas: 
-    'header header header header header header' 
-    'left middle middle middle middle right' 
-    'footer footer footer footer footer footer';
+    '. Logo .' 
+    '. About Right' 
+    '. Download Right'
+    '. Contact Right';
   grid-column-gap: 10px; 
 } 
 
-.left,
-.middle,
-.right {
+#logo,
+#about, 
+#download,
+#right,
+#contact {
   padding: 10px;
-  height: 600px; 
 }
 
-.left {
-  grid-area: left;
+#logo {
+  grid-area: Logo;
+  font-family: 'SqueakyChalkSound';
+  text-align: center;
+  font-size: 50px;
+  color: white;
+
 }
 
-.middle {
-  grid-area: middle;
-  background-image: url("../images/Papper.jpg")
+#about {
+  grid-area: About;
+  background-image: url("../images/Papper.jpg");
+  height: 90%;
 }
 
-.right {
-  grid-area: right;
+#download {
+grid-area: Download;
+color: white;
 }
 
-footer {
-  grid-area: footer;
+#download img {
+  height: 120px;
+  width: 120px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+
+#right {
+  grid-area: Right;
+}
+
+#contact {
+  grid-area: Contact;
   color: white;
   padding: 10px;
   text-align: center;
@@ -63,15 +125,4 @@ footer {
 #breadtext {
     text-align: center;
     font-size: 22px;
-}
-
-@media (max-width: 600px) {
-  .grid-container  {
-    grid-template-areas: 
-      'header header header header header header' 
-      'left left left left left left' 
-      'middle middle middle middle middle middle' 
-      'right right right right right right' 
-      'footer footer footer footer footer footer';
-  }
 }

@@ -5,52 +5,82 @@
 </head>
 <body id = "page-top">
 
+<nav id="main-nav">
+    <ul id="ul-nav">
+      <li id="brand" class="nav-item">
+        <a class="js-scroll-trigger" href="#page-top"><h2>NO HOMEWORK!</h2> </a>
+      </li>
+      <li class="nav-item">
+        <a class="js-scroll-trigger" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="js-scroll-trigger" href="#download">Download</a>
+      </li>
+      <li class="nav-item">
+        <a class="js-scroll-trigger" href="#contact">Contact</a>
+      </li>
+    </ul>
+</nav>
 <div class="grid-container">
-  <div class="header"> 
-    <nav id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"><h2>NO HOMEWORK!</h2> </a>
-          <ul class="navbar-nav text-uppercase ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#breadtext">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Download</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-          </ul>
-      </div>
-    </nav>
-  </div>
-  
-  <!-- Navigation -->
-  <div class = "left">
 
-  </div>
+    <div id="logo">
+        <h1>NO HOMEWORK!</h1>
+    </div>
 
-  <!--
-  <div class="left">  
-    <input type="button" onclick="location.href='CharacterSpecs.html';" value="Character Specs" /> <br> 
-    <input type="button" onclick="location.href='FAQ.html';" value="FAQ" /> <br>
-    <input type="button" onclick="location.href='About.html';" value="About" /> <br>  
-  </div>
-  -->
-
-<div class="middle"> 
-  <p id = "breadtext"> This is the official webforum for the unrealesed game "NO HOMEWORK" <br><br>
+  <div id="about"> 
+    <p id = "breadtext"> This is the official webforum for the unrealesed game "NO HOMEWORK" <br><br>
       We have created the company RatCat Entertainment where we develop a tower defense game. The theme of the game is something we believe is a great selling point and can appeal to many young people. <br><br>
       No Homework is an action packed strategy game with intense moments where students protect their valuable leisure time from hard work. The player is sucked into the game world and places out other students on the playing field to destroy the lessons that teachers are carrying. There are a variety of towers to choose from, ranging from small eraser to the cool football guy that all girls want to access. In addition, there are a number of teachers who have different characteristics, it is both the boring physics teacher who comes with a high essay to the scary principal who calls in reinforcement of teachers when she loses her homework. <br><br>
       BUT not only with the action packed adventure in your mobile, you can also send an invite to your best friend and bring him or her into the adventure. By collaborating on the playing field, you can build strategies that have never before been seen and cope with the enormously tough waves of teachers who come to destroy the day.<br>
-  </p>
-</div>
+    </p>
+  </div>
+  <div id="download">
+    <br><br><br>
+    <h2> DOWNLOAD "NO HOMEWORK!" FOR WINDOWS </h2> <br>
+    Step 1: You'll need to own "NO HOMEWORK!" for PC/Mac to play the full version. If you haven’t bought it already go here and buy it quick! <br> <br>
+    Step 2: INSTALL AND RUN THE GAME <br> <br>
+    Step 3: Download and open NoHomework.exe to run the game installer. Then just follow the instructions in the installer. <br><br>
+    
+    You'll need an internet connection the first time you launch the game, but after that you can play offline without any issues. <br><br> 
+    
+    <h3> PLAY WITH YOUR FRIENDS </h3> <br><br>
+    If you're planning on playing with friends, the easiest option is to start a subscription to Homework Realms. You can also set up your own NoHomework server from home, though that's a bit trickier to do. There are also a bunch of online servers elsewhere on the internet. <br> <br>
 
-  <div class="right">  
-    <input type="button" onclick="location.href='Download.html';" value="Download Page" /> 
+    <div id="downloadImage"> 
+      <a href="../videos/examplefile.mp4" download>
+      <img src="../images/downloadOn.png" alt="download"/>
+      </a>
+    </div>
   </div>
 
-  <footer> info </footer> 
+  <div id="right">  
+  </div>
+
+  <div id="contact">
+    <br> <br> <br> 
+    <h5>Our office is currently located</h5>
+    <img src="../images/JEw.png" alt="Image" height="300" width="520"> <br>
+
+    <h3> Have a question?. Please fill in the blanks and we will get back to you straight away :)</h3>  <br>
+    <form id="contactForm" name="sentMessage" novalidate="novalidate">
+        <div id="name">
+            <input class="form-control" id="name" type="text" placeholder="Namn *" required="required" data-validation-required-message="Please enter your name.">
+        </div>
+    
+        <div id="email">
+            <input class="form-control" id="email" type="email" placeholder="Email *" required="required" data-validation-required-message="Please enter your email address.">
+        </div>
+    
+        <div id="message">
+            <textarea class="form-control" id="message" placeholder="... *" required="required" data-validation-required-message="Please enter a message."></textarea>
+        </div>
+    
+        <div id="send"></div>
+            <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+        </div>
+    </form>
+  </div>
+</div>
 
   <!-- core JavaScript -->
   <script src="../javascript/Libraries/jquery.js"></script>
