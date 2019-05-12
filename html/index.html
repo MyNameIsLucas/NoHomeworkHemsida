@@ -54,6 +54,31 @@
   </div>
 
   <div id="right">  
+    <style>
+    input[type=text] {
+        width: 130px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        background-image: url('../images/SearchIconNEW.png');
+        background-position: left; 
+        background-size: 18%;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+      }
+      
+      input[type=text]:focus {
+        width: 100%;
+      }
+    </style>
+
+  <form>
+    <input type="text" name="search" placeholder="Search..">
+  </form>
   </div>
 
   <div id="contact">
@@ -64,19 +89,65 @@
     <h3> Have a question?. Please fill in the blanks and we will get back to you straight away :)</h3>  <br>
     <form id="contactForm" name="sentMessage" novalidate="novalidate">
         <div id="name">
-            <input class="form-control" id="name" type="text" placeholder="Namn *" required="required" data-validation-required-message="Please enter your name.">
+            <input class="form-control" id="name" type="form" placeholder="Namn *" required="required" data-validation-required-message="Please enter your name.">
+            <style>
+              input[type=form] {
+              width: 150px;
+              box-sizing: border-box;
+              border: 2px solid #ccc;
+              border-radius: 4px;
+              font-size: 16px;
+              background-color: white;
+              padding: 12px 20px 12px 40px;
+              -webkit-transition: width 0.4s ease-in-out;
+              transition: width 0.4s ease-in-out;
+              }
+            
+              input[type=form]:focus {
+              width: 100%;
+              }
+            </style>
         </div>
     
         <div id="email">
             <input class="form-control" id="email" type="email" placeholder="Email *" required="required" data-validation-required-message="Please enter your email address.">
+            <style>
+                input[type=email] {
+                width: 150px;
+                box-sizing: border-box;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+                font-size: 16px;
+                background-color: white;
+                padding: 12px 20px 12px 40px;
+                -webkit-transition: width 0.4s ease-in-out;
+                transition: width 0.4s ease-in-out;
+                }
+              
+                input[type=email]:focus {
+                width: 100%;
+                }
+              </style>
         </div>
     
         <div id="message">
             <textarea class="form-control" id="message" placeholder="... *" required="required" data-validation-required-message="Please enter a message."></textarea>
+            
         </div>
     
         <div id="send"></div>
-            <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+            <input type="button" value="SendMessage">
+            <style> 
+                input[type=Button] {
+                  background-color: #800000;
+                  border: none;
+                  color: white;
+                  padding: 16px 32px;
+                  text-decoration: none;
+                  margin: 4px 2px;
+                  cursor: pointer;
+                }
+                </style>
         </div>
     </form>
   </div>
