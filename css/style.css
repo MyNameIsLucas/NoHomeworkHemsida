@@ -28,7 +28,7 @@ body {
 }
 
 #ul-nav a:hover,#ul-nav a:focus,#ul-nav a:active {
-color: rgb(173, 216, 230);
+color: rgb(88, 169, 196);
 }
 
 #ul-nav a {
@@ -43,7 +43,7 @@ color: rgb(173, 216, 230);
   top: 0;
   right: 0;
   left: 0;
-  background-image: url("../images/Papper.jpg");
+  background-image: url("../images/NEWPAPPER.jpg");
   background-size: cover;
   width: 14%;
   height: 100%;
@@ -91,7 +91,7 @@ color: rgb(173, 216, 230);
 
 #about {
   grid-area: About;
-  background-image: url("../images/Papper.jpg");
+  background-image: url("../images/NEWPAPPER.jpg");
   height: 90%;
 }
 
